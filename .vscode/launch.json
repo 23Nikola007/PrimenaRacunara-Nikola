@@ -7,8 +7,8 @@
         {
             "type": "msedge",
             "request": "launch",
-            "name": "Open Igrica.html",
-            "file": "c:\\Users\\Nikola\\Documents\\GitHub\\PrimenaRacunara-Nikola\\Igrica.html"
+            "name": "Open index.html",
+            "file": "c:\\Users\\Nikola\\Documents\\GitHub\\PrimenaRacunara-Nikola\\index.html"
         }
     ]
 }
