@@ -99,11 +99,13 @@ li {
 
 table {
     width: 100%;
-    margin-top: 20px;
     border-collapse: collapse;
 }
 
-table td, tr {
+.vetine{
+    margin-top: 20px;
+}
+.vestine td,tr{
     background-color: #e3f2fd;
     text-align: left;
     padding: 12px;
@@ -111,6 +113,29 @@ table td, tr {
     border-collapse: collapse;
     vertical-align: top;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.muzika{
+    margin: 0 auto;
+    border-top: 0px;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: none;
+}
+.filmovi{
+    margin: 0 auto;
+    border-top: 0px;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: none;
+}
+.muzika td, .muzika tr,
+.filmovi td, .filmovi tr {
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
 }
 
 footer {
