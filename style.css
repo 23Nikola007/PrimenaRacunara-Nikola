@@ -1,13 +1,126 @@
-.naslov{
-    text-align: center;
-    background-color: aqua;
-    font-size: medium;
-    color: white;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+body {
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
 }
 
-h1{
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.banner {
+    position: relative;
     text-align: center;
-    font-size:xx-large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    animation: zoom 10s ease-in-out infinite alternate;
+}
+
+.textHeader {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    animation: fadeIn 2s ease-out forwards;
+}
+.textHeader h1 {
+    margin: 0 0 10px 0;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px black;
+}
+.textHeader p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+header a {
+    color: #00ffff;
+    text-decoration: underline;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #4a90e2;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table td, tr {
+    background-color: #e3f2fd;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid #ccc;
+    vertical-align: top;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer p, footer a {
+    margin: 0;
 }
